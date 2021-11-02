@@ -26,6 +26,7 @@ namespace Backoffice
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
+
             services.AddResponseCompression(options =>
             {
                 options.Providers.Add<GzipCompressionProvider>();
@@ -35,6 +36,7 @@ namespace Backoffice
             services.AddControllers();
 
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
+            
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
