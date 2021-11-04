@@ -1,4 +1,4 @@
-# Curso 7194 - Criando APIs Data Driven com ASP.NET Core 3 e EF Core 3
+# Criando APIs Data Driven com ASP.NET Core 3 e EF Core 3
 Neste curso vamos criar uma API voltada para CRUD de forma simples e rápida. 
 
 O foco é cobrir o essencial para a construção de uma boa API de forma produtiva, aplicando boas práticas e organização no código, finalizando com a publicação do projeto no Microsoft Azure.
