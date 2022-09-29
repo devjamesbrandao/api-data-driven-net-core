@@ -16,7 +16,6 @@ namespace Backoffice.Controllers
         [Route("")]
         [AllowAnonymous]
         [ResponseCache(VaryByHeader = "User-Agent", Location = ResponseCacheLocation.Any, Duration = 30)]
-        // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public async Task<ActionResult<List<Category>>> Get([FromServices] DataContext context)
         {
             var categories = await context.Categories.AsNoTracking().ToListAsync();
@@ -34,15 +33,13 @@ namespace Backoffice.Controllers
 
         [HttpPost]
         [Route("")]
-        // [Authorize(Roles = "employee")]
         [AllowAnonymous]
         public async Task<ActionResult<Category>> Post(
             [FromServices] DataContext context,
             [FromBody]Category model)
         {
             // Verifica se os dados são válidos
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
 
             try
             {

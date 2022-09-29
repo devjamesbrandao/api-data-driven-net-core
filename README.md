@@ -3,6 +3,11 @@ Neste curso vamos criar uma API voltada para CRUD de forma simples e rápida.
 
 O foco é cobrir o essencial para a construção de uma boa API de forma produtiva, aplicando boas práticas e organização no código, finalizando com a publicação do projeto no Microsoft Azure.
 
+## Imagem do Swagger da aplicação
+<p align="center">
+    <img src="/IMG/swagger.png" alt="Swagger da aplicação" title="Swagger da aplicação">
+</p> 
+
 ## Neste curso de API Data Driven com ASP.NET você vai...
 
 *   Aprender a construir uma API Data Driven
